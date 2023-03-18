@@ -1,0 +1,103 @@
+.topdeco {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height:45px;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 20px 0px black;
+    border-top: solid 1px #39de25;
+    border-bottom: solid 1px #39de25;
+}
+
+.topnav ul{
+    list-style-type: none;
+    margin-left: 288px;
+    top: 0;
+    padding: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#contact {
+    float: right;
+    margin-right: 20px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-family: Candara, Baskerville;
+    font-weight: bold;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #dddd;
+}
+
+.active {
+    background-color: #d81b60;
+}
+.header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    top: 0;
+    object-position: left;
+    font-size: xx-large;
+    color:#593C19;
+    background-color: #c7c5c5;
+
+}
+#Logo {
+    justify-content: space-around;
+    margin-left: 40px;
+    height: 80px;
+    padding-top: 10px;
+}
+
+.brødtekst{
+    margin-left: 300px;
+    margin-right: 250px;
+    margin-top: 180px;
+    font-family: Candera, Baskerville;
+}
+.dmmtop {
+    display: flex;
+    align-items: center;
+
+    font-size: 50px;
+    margin-top:380px;
+    margin-left: 220px;
+    padding-bottom: 50px;
+    font-family: Broadway, Baskerville;
+    resize: none;
+    color: #000000;
+}
+table,th,td{
+    border: darkgoldenrod 2px solid;
+}
+.container{
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+}

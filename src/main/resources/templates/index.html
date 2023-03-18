@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>PokeShop</title>
+  <link rel="stylesheet" th:href="@{css/mystyle.css}" href="../mystyle.css">
+</head>
+<body>
+<div th:replace="fragments/fragment1 :: frtopbarnav"></div>
+<div class="container">
+  <h1>Welcome to PokeShop</h1>
+  <table>
+    <thead>
+    <th>thumbnail</th>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Speed</th>
+    <th>special_defence</th>
+    <th>special_attack</th>
+    <th>defence</th>
+    <th>attack</th>
+    <th>hp</th>
+    <th>primary_type</th>
+    <th>secondary_type</th>
+    </thead>
+    <tbody>
+    <tr th:each="product :${products}">
+      pokedex_number, `name`, speed, special_defence, special_attack, defence, attack, hp, primary_type, secondary_type
+      <td> <img th:src="@{'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'+ ${product.id} + '.png'}"></td>
+      <td th:text="${product.id}"></td>
+      <td th:text="${product.name}"></td>
+      <td th:text="${product.speed}"></td>
+      <td th:text="${product.special_defence}"></td>
+      <td th:text="${product.special_attack}"></td>
+      <td th:text="${product.defence}"></td>
+      <td th:text="${product.attack}"></td>
+      <td th:text="${product.hp}"></td>
+      <td th:text="${product.primary_type}"></td>
+      <td th:text="${product.secondary_type}"></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

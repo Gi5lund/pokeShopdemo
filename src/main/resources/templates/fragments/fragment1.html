@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<div th:fragment="frtopbarnav">
+
+  <div class="topdeco">
+    <div class="header">
+
+      <a href="/"><img id="Logo" th:src="@{/pictures/fire-and-ice.png}" alt="balance the extremes" src="../static/pictures/fire-and-ice.png"> </a>
+
+    </div>
+
+    <div class="topnav">
+      <ul>
+        <li><a class="active" th:href="@{/index}" href="index.html">Home</a></li>
+        <li><a href="#">placeholder1</a></li>
+        <li><a href="#"> placeholder2</a></li>
+        <li><a href="#">placeholder3</a></li>
+        <li id="contact"><a href="#">Reach out </a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+</html>
