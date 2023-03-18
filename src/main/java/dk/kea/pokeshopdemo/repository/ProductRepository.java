@@ -11,7 +11,7 @@ import java.util.List;
 public class ProductRepository
 	{
 		// database properties
-		private final static	String db_URL="jdbc:mysql://localhost:3306/pokeshopdemo";
+		private final static	String db_URL="jdbc:mysql://localhost:3306/pokedex";
 		private final String uid="root";
 		private final String pwd="Pegasus2606";
 

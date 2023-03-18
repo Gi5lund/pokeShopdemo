@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>dk.kea</groupId>
-    <artifactId>pokeShopdemo</artifactId>
+    <artifactId>pokeshopdemo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>pokeShopdemo</name>
     <description>pokeShopdemo</description>

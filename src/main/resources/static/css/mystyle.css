@@ -95,9 +95,14 @@ li a:hover {
 }
 table,th,td{
     border: darkgoldenrod 2px solid;
+
+}
+table{
+    margin: 100px;
 }
 .container{
     display: flex;
     align-content: space-around;
     justify-content: center;
+
 }

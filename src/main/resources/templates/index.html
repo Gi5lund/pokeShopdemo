@@ -7,8 +7,11 @@
 </head>
 <body>
 <div th:replace="fragments/fragment1 :: frtopbarnav"></div>
-<div class="container">
+<div class="brødtekst">
   <h1>Welcome to PokeShop</h1>
+</div>
+<div class="container">
+
   <table>
     <thead>
     <th>thumbnail</th>
@@ -25,7 +28,6 @@
     </thead>
     <tbody>
     <tr th:each="product :${products}">
-      pokedex_number, `name`, speed, special_defence, special_attack, defence, attack, hp, primary_type, secondary_type
       <td> <img th:src="@{'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'+ ${product.id} + '.png'}"></td>
       <td th:text="${product.id}"></td>
       <td th:text="${product.name}"></td>
