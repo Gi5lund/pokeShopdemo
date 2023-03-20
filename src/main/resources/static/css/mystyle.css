@@ -95,10 +95,11 @@ li a:hover {
 }
 table,th,td{
     border: darkgoldenrod 2px solid;
+    padding: 4px;
 
 }
 table{
-    margin: 100px;
+    margin: 20px;
 }
 .container{
     display: flex;
