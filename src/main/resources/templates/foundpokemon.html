@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Found new Pokemon!</title>
+</head>
+<body>
+<!--pokedex_number, `name`, speed, special_defence, special_attack, defence, attack, hp, primary_type, secondary_type-->
+<form action="/foundpokemon" method="post">
+    <label for="pokedex_number">ID</label> <br>
+    <input  id="pokedex_number" type="number" name="pokedex_number"/> <br>
+
+    <label for="name">Name</label><br>
+    <input  id="name" type="text" name="name"/><br>
+
+    <label for="speed">Speed</label><br>
+    <input id="speed" type="number" name="speed"/> <br>
+
+    <label for="special_defence">Special defence</label><br>
+    <input id="special_defence" type="number" name="special_defence"/> <br>
+
+    <label for="special_attack">Special Attack</label><br>
+    <input id="special_attack" type="number" name="special_attack"/> <br>
+
+    <label for="defence">Defence</label><br>
+    <input id="defence" type="number" name="defence"/> <br>
+
+    <label for="attack">Attack</label><br>
+    <input id="attack" type="number" name="attack"/> <br>
+
+    <label for="hp">HP</label><br>
+    <input id="hp" type="number" name="hp"/><br>
+
+    <label for="primary_type">Primary Type</label><br>
+    <input id="primary_type" type="text" name="primary_type"/><br>
+
+    <label for="secondary_type">Secondary Type</label><br>
+    <input id="secondary_type" type="text" name="secondary_type"/><br>
+
+    <input type="submit" value="Add new Pokemon">
+
+
+
+</form>
+</body>
+</html>
