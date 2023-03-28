@@ -2,6 +2,7 @@ package dk.kea.pokeshopdemo.repository;
 
 
 import dk.kea.pokeshopdemo.model.Pokemon;
+import dk.kea.pokeshopdemo.utility.ConnectionManager;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
@@ -26,7 +27,7 @@ public class ProductRepository
 		public List<Pokemon> getAll(){
 			List<Pokemon> productList=new ArrayList<>();
 			try {
-				Connection connection= DriverManager.getConnection(db_URL,uid,pwd);
+				Connection connection= ConnectionManager.getConnection(db_URL,uid,pwd);
 				Statement statement=connection.createStatement();
 				final String SQL_QUERY="SELECT * FROM pokedex.pokemon";
 				ResultSet resultSet=statement.executeQuery(SQL_QUERY);
@@ -56,7 +57,7 @@ public class ProductRepository
 		public void addPokemon(Pokemon newPokemon)
 			{
 				try {
-					Connection connection=DriverManager.getConnection(db_URL,uid,pwd);
+					Connection connection= ConnectionManager.getConnection(db_URL,uid,pwd);
 					final String addToPokedex="INSERT INTO pokedex.pokemon(pokedex_number, name, speed, special_defence, special_attack, defence, attack, hp, primary_type, secondary_type) VALUES(?,?,?,?,?,?,?,?,?,?)";
 					PreparedStatement preparedStatement=connection.prepareStatement(addToPokedex);
 
