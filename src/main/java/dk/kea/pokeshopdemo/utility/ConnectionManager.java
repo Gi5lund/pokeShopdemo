@@ -1,16 +1,15 @@
 package dk.kea.pokeshopdemo.utility;
 
-import java.sql.Connection;
+import java.sql.*;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionManager
 	{
-		private static Connection connection=null;
+		private static Connection connection;
 
-
-		public static Connection getConnection(String DB_URL,String UID, String PWD)
-			{
+		private ConnectionManager(){}
+		public static Connection getConnection(String DB_URL,String UID, String PWD){
 				if (connection == null) {
 
 					try {

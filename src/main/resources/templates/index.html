@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8">
     <title>PokeShop</title>
   <link rel="stylesheet" th:href="@{css/mystyle.css}" href="../mystyle.css">
 </head>
 <body>
-<div th:replace="fragments/fragment1 :: frtopbarnav"></div>
-<div class="brødtekst">
-  <h1>Welcome to PokeShop</h1>
-  <span> <a th:href="@{/foundpokemon}" href="/foundpokemon">Add new Pokemon!</a></span>
-</div>
-<div class="container">
+<!-- <div th:replace="fragments/fragment1 :: frtopbarnav"></div> -->
 
+  <h1>Welcome to PokeShop</h1>
+  <span> <a th:href="@{/foundpokemon}" href="foundpokemon">Add new Pokemon!</a></span>
+
+
+<div class="container">
   <table>
     <thead>
     <th>thumbnail</th>

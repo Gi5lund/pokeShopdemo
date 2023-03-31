@@ -102,9 +102,9 @@ table{
     margin: 20px;
     border-collapse: collapse;
 }
-.container{
-    display: flex;
-    align-content: space-around;
-    justify-content: center;
+/*.container{*/
+/*    display: flex;*/
+/*    align-content: space-around;*/
+/*    justify-content: center;*/
 
-}
+/*}*/

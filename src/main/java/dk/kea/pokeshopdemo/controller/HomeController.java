@@ -17,18 +17,18 @@ public class HomeController
 			this.productRepository=productRepository;
 
 		}
-		@GetMapping("/index")
+		@GetMapping("/")
 		public String Index(Model model){
 			model.addAttribute("products",productRepository.getAll());
 			return "index";
 		}
-		@GetMapping("/foundpokemon")
+		@GetMapping("foundpokemon")
 		public String addPokemon(){
-			return "/foundpokemon";
+			return "foundpokemon";
 		}
 		//pokedex_number, `name`, speed, special_defence, special_attack, defence, attack, hp, primary_type, secondary_type-->
 
-		@PostMapping("/foundpokemon")
+		@PostMapping("foundpokemon")
 		public String  addPokemon(@RequestParam("pokedex_number") int pokedex_number, @RequestParam("name") String name,@RequestParam("speed") int speed, @RequestParam("special_defence") int special_defence, @RequestParam("special_attack") int special_attack, @RequestParam("defence") int defence, @RequestParam("attack") int attack, @RequestParam("hp") int hp, @RequestParam("primary_type") String primary_type, @RequestParam("secondary_type") String secondary_type){
 			Pokemon newPokemon= new Pokemon();
 			newPokemon.setId(pokedex_number);
@@ -43,7 +43,7 @@ public class HomeController
 			newPokemon.setSecondary_type(secondary_type);
 			productRepository.addPokemon(newPokemon);
 
-			return "redirect:/index";
+			return "redirect:/";
 
 
 		}
